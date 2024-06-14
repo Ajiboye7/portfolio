@@ -32,7 +32,7 @@ const Hero = () => {
             <a href="https://github.com/Ajiboye7" target="_blank" rel="noopener noreferrer" className="hero-link">
               <i className="fab fa-github"></i> GitHub
             </a>
-            <a href="/Ajiboye Resume.pdf" download className="hero-link">
+            <a href="/AjiboyeMuyideenCv.pdf" download className="hero-link">
               <i className="fas fa-download"></i> Download CV
             </a>
           </div>
