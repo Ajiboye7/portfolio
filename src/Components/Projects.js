@@ -54,7 +54,7 @@ const Projects = () => {
               <li>Payment Integration: Utilizes Stripe for secure and convenient payment processing.</li>
               <li>Responsive Design: Ensures a seamless shopping experience across different devices and screen sizes.</li>
             </ul>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="view-project-button">Still in production</a>
+            <a href="https://clutchwears.netlify.app/" target="_blank" rel="noopener noreferrer" className="view-project-button">Still in production</a>
           </div>
           <div className="project-image">
             <img src={image3} alt="Project 3" />
