@@ -6,8 +6,7 @@ const Hero = () => {
   const [typedText, setTypedText] = useState('');
 
   useEffect(() => {
-    const text = "A Full Stack Web Developer dedicated to crafting exceptional user experiences by seamlessly integrating frontend and backend technologies. With a strong emphasis on both the frontend and backend development, I specialize in architecting robust, scalable solutions that drive the success of digital products.";
-
+    const text = "A Software Web Developer dedicated to crafting exceptional user experiences by seamlessly integrating frontend and backend technologies. With a strong emphasis on both the frontend and backend development, I specialize in architecting robust, scalable solutions that drive the success of digital products.";
     let index = 0;
     const intervalId = setInterval(() => {
       setTypedText(text.substring(0, index));
@@ -33,7 +32,7 @@ const Hero = () => {
             <a href="https://github.com/Ajiboye7" target="_blank" rel="noopener noreferrer" className="hero-link">
               <i className="fab fa-github"></i> GitHub
             </a>
-            <a href="/path/to/your/cv.pdf" download className="hero-link">
+            <a href="/Ajiboye Resume.pdf" download className="hero-link">
               <i className="fas fa-download"></i> Download CV
             </a>
           </div>
