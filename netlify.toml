@@ -2,3 +2,44 @@
 from = '*/*'
 to = "index.html"
 status = 200
+
+
+import React, { useState } from 'react';
+import '../Styles/Navbar.css';
+
+// Define a type for the component's props
+type NavbarProps = {};
+
+// Define a type for the component's state
+type NavbarState = {
+  isOpen: boolean;
+};
+
+const Navbar: React.FC<NavbarProps> = () => {
+  const [isOpen, setIsOpen] = useState<NavbarState['isOpen']>(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="navbar">
+      <div className="brand-title">My Portfolio</div>
+      <button className="toggle-button" onClick={toggleNavbar}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </button>
+      <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
